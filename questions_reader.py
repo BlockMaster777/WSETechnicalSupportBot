@@ -26,6 +26,7 @@ class QuestionsApp:
         self.db_manager = DBManager(DATABASE_PATH)
         self.root = root
         self.root.title("Questions Reader")
+        self.root.resizable(False, False)
 
         dev_label = tk.Label(root, text="Dev")
         dev_label.pack(padx=5, pady=10)
