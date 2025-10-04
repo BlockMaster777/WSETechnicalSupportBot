@@ -207,3 +207,5 @@ marimo/_lsp/
 __marimo__/
 
 support_bot/config.py
+support_bot/test_database.db
+database.db
