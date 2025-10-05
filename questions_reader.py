@@ -30,11 +30,11 @@ class QuestionsApp:
 
         dev_label = tk.Label(root, text="Dev")
         dev_label.pack(padx=5, pady=10)
-        self.dev_questions_listbox = tk.Listbox(root, width=50, height=15)
+        self.dev_questions_listbox = tk.Listbox(root, width=200, height=15)
         self.dev_questions_listbox.pack(pady=0)
         prod_label = tk.Label(root, text="Product")
         prod_label.pack(padx=5, pady=20)
-        self.prod_questions_listbox = tk.Listbox(root, width=50, height=15)
+        self.prod_questions_listbox = tk.Listbox(root, width=200, height=15)
         self.prod_questions_listbox.pack(pady=0)
 
         self.delete_button = tk.Button(root, text="Delete Question", command=self.delete_question)
