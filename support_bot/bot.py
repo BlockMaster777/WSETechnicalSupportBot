@@ -36,7 +36,7 @@ def gen_faq_list_markup():
 def gen_options_markup():
     markup = InlineKeyboardMarkup()
     markup.add(InlineKeyboardButton("Часто задаваемые вопросы", callback_data="fl"))
-    markup.add(InlineKeyboardButton("Задать вопрос", callback_data="q"))
+    markup.add(InlineKeyboardButton("Отправить вопрос в тех-поддержку", callback_data="q"))
     return markup
 
 
@@ -49,8 +49,8 @@ def gen_back_button():
 
 def gen_theme_options():
     markup = InlineKeyboardMarkup()
-    markup.add(InlineKeyboardButton("Проблема с работой сайта / приложения", callback_data="td"))
-    markup.add(InlineKeyboardButton("Проблема с товаром / доставкой", callback_data="tp"))
+    markup.add(InlineKeyboardButton("Проблема с сайтом / оплатой", callback_data="td"))
+    markup.add(InlineKeyboardButton("Проблема с товаром", callback_data="tp"))
     return markup
 
 
